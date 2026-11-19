@@ -1,0 +1,2061 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="Site officiel de NZULO Tech - Entreprise technologique leader en solutions informatiques (réseaux, cybersécurité, développement web) et académie de formation en langues (Anglais, Français, Espagnol). CEO : Dieume MIRIMO." />
+    <meta name="author" content="NZULO Tech - Dieume MIRIMO (CEO)" />
+    <meta name="keywords"
+        content="NZULO Tech, Dieume MIRIMO, CEO NZULO Tech, formation langues, anglais tech, francais pro, espagnol affaires, programmation reseau, cybersecurite, developpeur web, IT Goma, RDC" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Meta pour réseaux sociaux -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NZULO Tech | Connect • Innovate • Empower — CEO: Dieume MIRIMO" />
+    <meta property="og:description"
+        content="Solutions informatiques de pointe (Réseaux, Cybersécurité, Web) et Formations d'excellence en Langues (Anglais, Français, Espagnol) avec NZULO Tech." />
+    <meta property="og:image" content="nzulo-tech-logo.jpg" />
+
+    <title>NZULO Tech</title>
+
+    <!-- Optimisation DNS & Préconnexions -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- Google Fonts optimisé non-bloquant -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+    </noscript>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.png" type="image/png" sizes="32x32" />
+    <link rel="shortcut icon" href="logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+
+    <!-- Préchargement uniquement du logo d'en-tête critique -->
+    <link rel="preload" href="nzulo-logo-clean.png" as="image" fetchpriority="high" />
+    <!-- Initialisation immédiate du Mode Clair comme thème principal -->
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('dieume_theme')) localStorage.removeItem('dieume_theme');
+                var saved = localStorage.getItem('nzulo_theme');
+                if (saved === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                }
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <aside class="announcement-bar" aria-label="Annonce">
+        <div class="container announcement-content">
+            <span class="announcement-badge">NZULO TECH 2026</span>
+            <p>🏢 <strong>NZULO Tech &bull; CONNECT &bull; INNOVATE &bull; EMPOWER :</strong> Inscriptions ouvertes pour
+                les sessions de Formations en Langues (<strong>Anglais</strong>, <strong>Français</strong>,
+                <strong>Espagnol</strong>) & Audits IT sous la direction de <strong>Dieume MIRIMO (CEO)</strong>.</p>
+            <a href="#simulator" class="announcement-link">Simulateur & Inscription &rarr;</a>
+        </div>
+    </aside>
+
+    <!-- HEADER & NAVBAR -->
+    <header id="main-header" class="site-header">
+        <div class="container header-container">
+            <a href="#hero" class="brand-logo" aria-label="Accueil NZULO Tech">
+                <img src="nzulo-logo-clean.png" alt="Logo Officiel NZULO Tech" class="logo-img" fetchpriority="high"
+                    decoding="async" width="155" height="48" />
+            </a>
+
+            <nav class="main-nav" aria-label="Navigation principale">
+                <ul class="nav-links" id="desktop-nav">
+                    <li id="nav-item-home" class="nav-item-home hidden-home"><a href="#hero"
+                            class="nav-link active">Accueil</a></li>
+                    <li>
+                        <a href="#formations" class="nav-link highlight-nav">
+                            Formations Langues
+                            <span class="nav-pill">Academy</span>
+                        </a>
+                    </li>
+                    <li><a href="#services" class="nav-link">Services IT</a></li>
+                    <li><a href="#projects" class="nav-link">Réalisations</a></li>
+                    <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#actualites" class="nav-link">Actualités</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#about" class="nav-link dropdown-toggle" id="about-dropdown-btn" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span>À propos</span>
+                            <svg class="dropdown-chevron" viewBox="0 0 24 24" width="14" height="14" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-label="Sous-menu À propos">
+                            <li>
+                                <a href="#team" class="dropdown-link">
+                                    <span class="dropdown-icon">👥</span>
+                                    <div class="dropdown-link-text">
+                                        <strong>Équipe</strong>
+                                        <small>Direction & Spécialistes NZULO Tech</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="dropdown-link">
+                                    <span class="dropdown-icon">📞</span>
+                                    <div class="dropdown-link-text">
+                                        <strong>Contacts</strong>
+                                        <small>Coordonnées officielles & RDV</small>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-dropdown language-dropdown">
+                        <button type="button" class="nav-link dropdown-toggle language-toggle" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="language-icon">🌐</span>
+                            <span class="language-current">Français</span>
+                            <svg class="dropdown-chevron" viewBox="0 0 24 24" width="14" height="14" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right language-menu" aria-label="Choisir la langue">
+                            <li><button type="button" class="dropdown-link language-option active" data-language="fr"
+                                    data-label="Français"><span class="dropdown-icon">🇫🇷</span><span
+                                        class="dropdown-link-text"><strong>Français</strong></span></button></li>
+                            <li><button type="button" class="dropdown-link language-option" data-language="en"
+                                    data-label="English"><span class="dropdown-icon">🇬🇧</span><span
+                                        class="dropdown-link-text"><strong>English</strong></span></button></li>
+                            <li><button type="button" class="dropdown-link language-option" data-language="es"
+                                    data-label="Español"><span class="dropdown-icon">🇪🇸</span><span
+                                        class="dropdown-link-text"><strong>Español</strong></span></button></li>
+                            <li><button type="button" class="dropdown-link language-option" data-language="sw"
+                                    data-label="Swahili"><span class="dropdown-icon">🌍</span><span
+                                        class="dropdown-link-text"><strong>Swahili</strong></span></button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn theme-toggle" aria-label="Changer de thème clair/sombre"
+                    title="Mode Sombre / Clair">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <a href="#contact" class="btn btn-sm btn-primary header-cta-btn">Prendre RDV</a>
+
+                <button id="mobile-toggle" class="hamburger-btn" aria-label="Ouvrir le menu de navigation"
+                    aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-nav-drawer" aria-hidden="true">
+            <div class="mobile-nav-inner">
+                <div class="mobile-nav-brand">
+                    <img src="nzulo-logo-clean.png" alt="Logo NZULO Tech" class="mobile-logo-img" loading="lazy"
+                        decoding="async" width="150" height="44" />
+                </div>
+                <ul class="mobile-nav-list">
+                    <li id="mobile-nav-item-home" class="mobile-nav-item-home hidden-home"><a href="#hero"
+                            class="mobile-nav-link active">Accueil</a></li>
+                    <li><a href="#formations" class="mobile-nav-link highlight-mobile">🎓 NZULO Language Academy
+                            (EN • FR • ES)</a></li>
+                    <li><a href="#services" class="mobile-nav-link">Solutions IT & Réseaux</a></li>
+                    <li><a href="#projects" class="mobile-nav-link">Missions & Études de Cas</a></li>
+                    <li><a href="#tarifs" class="mobile-nav-link">Formules d'Entreprise</a></li>
+                    <li><a href="#faq" class="mobile-nav-link">Foire Aux Questions</a></li>
+                    <li><a href="#actualites" class="mobile-nav-link">Actualités</a></li>
+                    <li class="mobile-nav-item-dropdown">
+                        <div class="mobile-dropdown-header">
+                            <a href="#about" class="mobile-nav-link">À propos</a>
+                            <button type="button" class="mobile-subnav-toggle" aria-expanded="false"
+                                aria-label="Afficher les sous-onglets"><span>▾</span></button>
+                        </div>
+                        <ul class="mobile-subnav-list">
+                            <li><a href="#team" class="mobile-subnav-link"><span class="subnav-bullet">👥</span><span>Équipe</span></a></li>
+                            <li><a href="#contact" class="mobile-subnav-link"><span class="subnav-bullet">📞</span><span>Contacts</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav-item-dropdown mobile-language-dropdown">
+                        <div class="mobile-dropdown-header">
+                            <button type="button" class="mobile-nav-link language-mobile-toggle" aria-expanded="false">
+                                <span>🌐 Langue : <span class="language-current-mobile">Français</span></span>
+                            </button>
+                            <button type="button" class="mobile-subnav-toggle mobile-language-toggle"
+                                aria-expanded="false" aria-label="Afficher les langues"><span>▾</span></button>
+                        </div>
+                        <ul class="mobile-subnav-list mobile-language-menu">
+                            <li><button type="button" class="mobile-subnav-link language-option" data-language="fr"
+                                    data-label="Français"><span class="subnav-bullet">🇫🇷</span><span>Français</span></button></li>
+                            <li><button type="button" class="mobile-subnav-link language-option" data-language="en"
+                                    data-label="English"><span class="subnav-bullet">🇬🇧</span><span>English</span></button></li>
+                            <li><button type="button" class="mobile-subnav-link language-option" data-language="es"
+                                    data-label="Español"><span class="subnav-bullet">🇪🇸</span><span>Español</span></button></li>
+                            <li><button type="button" class="mobile-subnav-link language-option" data-language="sw"
+                                    data-label="Swahili"><span class="subnav-bullet">🌍</span><span>Swahili</span></button></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="mobile-nav-footer">
+                    <a href="https://wa.me/243847988507" class="btn btn-whatsapp w-100" target="_blank" rel="noopener">
+                        <img src="whatsapp.png" alt="WhatsApp" class="btn-icon-img" loading="lazy" decoding="async"
+                            width="20" height="20" />
+                        WhatsApp Direction (+243 847 988 507)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-shapes" aria-hidden="true">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-grid"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>🏢 NZULO Tech &bull; CONNECT &bull; INNOVATE &bull; EMPOWER</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Bienvenue chez <span class="highlight-text">NZULO Tech</span>
+                    </h1>
+
+                    <div class="hero-typed-wrapper">
+                        <span class="typed-prefix">Pôles d'Excellence &mdash;</span>
+                        <span id="typed-output" class="typed-text"></span>
+                        <span class="typed-cursor">|</span>
+                    </div>
+
+                    <p class="hero-desc">
+                        Sous le leadership de <strong>Dieume MIRIMO</strong> (CEO & Ingénieur Réseau), <strong>NZULO
+                            Tech</strong> est une entreprise technologique innovante et une académie linguistique
+                        d'élite. Nous connectons les organisations avec des architectures réseaux résilientes,
+                        sécurisons leurs systèmes d'information et propulsons leurs talents vers l'international grâce à
+                        des formations certifiées en <strong>Anglais</strong>, <strong>Français</strong> et
+                        <strong>Espagnol</strong>.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#formations" class="btn btn-primary btn-lg">
+                            <span>NZULO Language Academy</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                        </a>
+                        <a href="#services" class="btn btn-outline btn-lg">
+                            <span>Solutions Réseaux & IT</span>
+                        </a>
+                        <a href="https://wa.me/243847988507?text=Bonjour%20NZULO%20Tech,%20je%20souhaite%20contacter%20votre%20direction%20pour%20un%20projet"
+                            class="btn btn-whatsapp-hero" target="_blank" rel="noopener"
+                            title="Échanger directement avec la direction sur WhatsApp">
+                            <img src="whatsapp.png" alt="WhatsApp" width="22" height="22" loading="lazy"
+                                decoding="async" />
+                            <span>WhatsApp Direction</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <div class="trust-stars">★★★★★</div>
+                        <span class="trust-text">Plébiscité par <strong>+500 professionnels & entreprises</strong>
+                            partenaires</span>
+                    </div>
+                </div>
+
+                <div class="hero-media">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-glow"></div>
+                        <div class="profile-card">
+                            <div class="photo-container">
+                                <img src="Dieume.jpg" alt="Dieume MIRIMO - CEO de NZULO Tech" id="profile-photo"
+                                    class="clickable-photo" fetchpriority="high" decoding="async" width="300"
+                                    height="320" title="Cliquez pour agrandir la photo de Dieume MIRIMO" />
+                                <div class="photo-overlay-hint">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none"
+                                        stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                    <span>Agrandir</span>
+                                </div>
+                            </div>
+                            <div class="profile-meta">
+                                <h3>Dieume MIRIMO</h3>
+                                <p class="ceo-title">CEO & Fondateur &bull; NZULO Tech</p>
+                                <span class="ceo-badge">Direction Générale & Ingénierie Réseau</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-top-left">
+                            <span class="badge-icon">🏢</span>
+                            <div class="badge-text">
+                                <strong>NZULO Tech</strong>
+                                <span>Connect • Innovate • Empower</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-bottom-right">
+                            <span class="badge-icon">🌐</span>
+                            <div class="badge-text">
+                                <strong>Academy EN • FR • ES</strong>
+                                <span>Anglais • Français • Espagnol</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container hero-stats-container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-plus">+</div>
+                        <p class="stat-label">Professionnels & Étudiants formés</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="120">0</div>
+                        <div class="stat-plus">+</div>
+                        <p class="stat-label">Infrastructures & Projets déployés</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-plus">Langues</div>
+                        <p class="stat-label">Anglais • Français • Espagnol</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="99">0</div>
+                        <div class="stat-plus">%</div>
+                        <p class="stat-label">Taux de Satisfaction Clients</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISUAL SHOWCASE / CAROUSEL -->
+        <section id="showcase" class="showcase-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">PÔLES D'ACTIVITÉS NZULO TECH</span>
+                    <h2 class="section-title">Les Pôles d'Excellence de NZULO Tech</h2>
+                    <p class="section-subtitle">Notre vision transversale alliant réseaux informatiques, cybersécurité,
+                        développement digital et enseignement linguistique international.</p>
+                </div>
+
+                <div class="carousel-container" id="home-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="animation1.png" alt="NZULO Network Systems" fetchpriority="high" decoding="async"
+                                width="1000" height="627" />
+                            <div class="slide-caption">
+                                <h3>NZULO Network Systems : Routage & Infrastructures</h3>
+                                <p>Conception, déploiement et optimisation de réseaux d'entreprise haute disponibilité
+                                    (Cisco, Mikrotik, VLANs, VPN IPsec).</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="animation2.png" alt="NZULO CyberDefense" loading="lazy" decoding="async"
+                                width="1000" height="407" />
+                            <div class="slide-caption">
+                                <h3>NZULO CyberDefense : Sécurité & Audit des Systèmes</h3>
+                                <p>Audits rigoureux, protection pare-feu pfSense/Fortinet, détection proactive des
+                                    vulnérabilités et plans de continuité d'activité (PRA).</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="animation3.png" alt="NZULO Digital Solutions" loading="lazy" decoding="async"
+                                width="473" height="314" />
+                            <div class="slide-caption">
+                                <h3>NZULO Digital : Développement Web & Systèmes Cloud</h3>
+                                <p>Création d'interfaces web réactives, ultra-rapides et sécurisées pour propulser votre
+                                    visibilité et vos processus d'affaires.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="animation4.png" alt="NZULO Language Academy" loading="lazy" decoding="async"
+                                width="866" height="316" />
+                            <div class="slide-caption">
+                                <h3>NZULO Language Academy : Anglais • Français • Espagnol</h3>
+                                <p>Apprentissage immersif axé sur la pratique orale, l'anglais technique pour l'IT,
+                                    l'art oratoire français et la négociation en espagnol.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-arrow prev" aria-label="Diapositive précédente">&#10094;</button>
+                    <button class="carousel-arrow next" aria-label="Diapositive suivante">&#10095;</button>
+
+                    <div class="carousel-indicators">
+                        <button class="dot active" aria-label="Aller à la diapositive 1"></button>
+                        <button class="dot" aria-label="Aller à la diapositive 2"></button>
+                        <button class="dot" aria-label="Aller à la diapositive 3"></button>
+                        <button class="dot" aria-label="Aller à la diapositive 4"></button>
+                    </div>
+
+                    <div class="carousel-progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+            <div class="container">
+
+                <!-- Navigation des Sous-onglets À Propos (Équipe & Contacts) -->
+                <div class="about-subtabs-bar">
+                    <span class="subtabs-label">Sous-onglets À propos :</span>
+                    <div class="subtabs-group">
+                        <a href="#about" class="subtab-pill active">🏢 L'Entreprise & Vision</a>
+                        <a href="#team" class="subtab-pill">👥 Équipe</a>
+                        <a href="#contact" class="subtab-pill">📞 Contacts</a>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-col">
+                        <!-- Logo officiel de l'entreprise mis en valeur -->
+                        <div class="company-logo-card">
+                            <img src="nzulo-tech-logo.jpg" alt="Logo Officiel NZULO Tech" class="company-showcase-img"
+                                loading="lazy" decoding="async" width="320" height="178" />
+                        </div>
+
+                        <div class="about-card-visual">
+                            <img src="Dieume.jpg" alt="Dieume MIRIMO - CEO de NZULO Tech" class="about-img"
+                                loading="lazy" decoding="async" width="400" height="425" />
+                            <div class="experience-badge">
+                                <span class="exp-number">Dieume MIRIMO</span>
+                                <span class="exp-text">CEO & Fondateur • NZULO Tech</span>
+                            </div>
+                        </div>
+
+                        <div class="about-contact-quick">
+                            <div class="quick-item">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <span>+243 847 988 507</span>
+                            </div>
+                            <div class="quick-item">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>barakamirimo@gmail.com</span>
+                            </div>
+                            <div class="quick-item">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Siège : Goma, RDC & En Ligne Mondial</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text-col">
+                        <span class="section-tag">L'ENTREPRISE & SA VISION</span>
+                        <h2 class="section-title">À Propos de NZULO Tech & de son CEO, Dieume MIRIMO</h2>
+
+                        <p class="lead-text">
+                            <strong>NZULO Tech</strong> a été créée avec une ambition claire résumée dans sa devise :
+                            <em>CONNECT • INNOVATE • EMPOWER</em>.
+                        </p>
+
+                        <p>
+                            Sous l'impulsion de son CEO et Fondateur, <strong>Dieume MIRIMO</strong>, ingénieur
+                            expérimenté en programmation réseau, cybersécurité et technologies du web, NZULO Tech
+                            s'impose comme un acteur incontournable de la transformation numérique et du renforcement
+                            des compétences humaines.
+                        </p>
+
+                        <p>
+                            Nous croyons fermement qu'une entreprise pérenne et moderne doit reposer sur deux piliers
+                            indissociables : une <strong>infrastructure technologique infaillible</strong> et une
+                            <strong>capacité de communication multilingue internationale</strong>. C'est pourquoi NZULO
+                            Tech réunit sous une même bannière des services d'ingénierie informatique de haut niveau et
+                            la prestigieuse <strong>NZULO Language Academy</strong> dispensant des formations certifiées
+                            en <strong>Anglais</strong>, <strong>Français</strong> et <strong>Espagnol</strong>.
+                        </p>
+
+                        <div class="about-pillars">
+                            <div class="pillar-card">
+                                <div class="pillar-icon">🔗</div>
+                                <h4>CONNECT</h4>
+                                <p>Connecter les organisations via des architectures réseaux hautement disponibles, du
+                                    routage Cisco/Mikrotik et des VPNs sécurisés.</p>
+                            </div>
+                            <div class="pillar-card">
+                                <div class="pillar-icon">💡</div>
+                                <h4>INNOVATE</h4>
+                                <p>Innover avec des solutions web modernes, l'automatisation système par scripts Python
+                                    et une cybersécurité proactive.</p>
+                            </div>
+                            <div class="pillar-card">
+                                <div class="pillar-icon">🚀</div>
+                                <h4>EMPOWER</h4>
+                                <p>Donner du pouvoir aux professionnels, étudiants et cadres par la maîtrise pratique de
+                                    l'anglais, du français et de l'espagnol.</p>
+                            </div>
+                            <div class="pillar-card">
+                                <div class="pillar-icon">🛡️</div>
+                                <h4>DELIVER</h4>
+                                <p>Rigueur d'exécution absolue, respect des délais, disponibilité 24/7 et accompagnement
+                                    personnalisé par la direction.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-cta-row">
+                            <a href="#contact" class="btn btn-primary">Contacter le Cabinet du CEO</a>
+                            <a href="#formations" class="btn btn-secondary">Découvrir la Language Academy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION ÉQUIPE (SOUS-ONGLET À PROPOS) -->
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">SOUS-ONGLET À PROPOS</span>
+                    <h2 class="section-title">L'Équipe de Direction & Spécialistes NZULO Tech</h2>
+                    <p class="section-subtitle">
+                        Des experts engagés, sous la conduite du CEO Dieume MIRIMO, pour propulser vos projets
+                        technologiques et vos compétences linguistiques vers les plus hauts standards internationaux.
+                    </p>
+                </div>
+
+                <div class="team-grid">
+
+                    <!-- Membre 1 : CEO Dieume MIRIMO (Featured Leader) -->
+                    <div class="team-card team-card-ceo">
+                        <div class="team-card-badge">Direction Générale</div>
+                        <div class="team-avatar-box">
+                            <img src="Dieume.jpg" alt="Dieume MIRIMO - CEO NZULO Tech" class="team-img clickable-photo"
+                                id="team-ceo-photo" loading="lazy" decoding="async" width="320" height="340"
+                                title="Cliquer pour agrandir la photo de Dieume MIRIMO" />
+                            <div class="team-flag-pill">CEO &bull; Trilingue EN • FR • ES</div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Dieume MIRIMO</h3>
+                            <p class="team-role">CEO & Fondateur • Ingénieur Réseau en Chef</p>
+                            <p class="team-bio">
+                                Spécialiste chevronné en programmation et architecture des réseaux (Cisco, Mikrotik),
+                                expert en cybersécurité et formateur linguistique passionné. Il définit la vision
+                                stratégique de NZULO Tech et supervise personnellement les missions critiques ainsi que
+                                la NZULO Language Academy.
+                            </p>
+                            <div class="team-tags">
+                                <span>Architecture Réseau</span>
+                                <span>Cybersécurité</span>
+                                <span>Formateur Trilingue</span>
+                                <span>Stratégie d'Entreprise</span>
+                            </div>
+                            <div class="team-contact-actions">
+                                <a href="https://wa.me/243847988507" class="btn btn-sm btn-whatsapp" target="_blank"
+                                    rel="noopener">
+                                    <img src="whatsapp.png" alt="WhatsApp" width="16" height="16" loading="lazy"
+                                        decoding="async" />
+                                    <span>WhatsApp CEO</span>
+                                </a>
+                                <a href="mailto:barakamirimo@gmail.com" class="btn btn-sm btn-outline">
+                                    <span>Email Direction</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Membre 2 : Lead Cybersécurité & Audits -->
+                    <div class="team-card">
+                        <div class="team-avatar-box placeholder-avatar">
+                            <div class="avatar-icon-circle">🛡️</div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Pôle Cybersécurité & Audits SI</h3>
+                            <p class="team-role">Département Sécurité des Systèmes d'Information</p>
+                            <p class="team-bio">
+                                Équipe dédiée aux audits de sécurité offensive et défensive, à la configuration de
+                                clusters pare-feu (pfSense, Fortinet) et à la mise en conformité des systèmes pour
+                                protéger les données d'entreprise contre les cybermenaces.
+                            </p>
+                            <div class="team-tags">
+                                <span>Audit de Vulnérabilités</span>
+                                <span>Pare-feux pfSense</span>
+                                <span>Plans PRA/PCA</span>
+                            </div>
+                            <div class="team-contact-actions">
+                                <a href="#contact" class="btn btn-sm btn-outline w-100">Solliciter un Audit</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Membre 3 : Lead Développement Web & Cloud -->
+                    <div class="team-card">
+                        <div class="team-avatar-box placeholder-avatar">
+                            <div class="avatar-icon-circle">💻</div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Pôle Solutions Digitales & Web</h3>
+                            <p class="team-role">Département Développement & Architectures Cloud</p>
+                            <p class="team-bio">
+                                Ingénieurs logiciels et développeurs full-stack concevant des plateformes web modernes,
+                                réactives, ultra-rapides et sécurisées, conçues pour convertir les visiteurs et
+                                automatiser les processus d'entreprise.
+                            </p>
+                            <div class="team-tags">
+                                <span>Web Moderne</span>
+                                <span>JavaScript ES6+</span>
+                                <span>APIs & Automatisation</span>
+                            </div>
+                            <div class="team-contact-actions">
+                                <a href="#contact" class="btn btn-sm btn-outline w-100">Démarrer un Projet Web</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Membre 4 : Pôle Pédagogique NZULO Academy -->
+                    <div class="team-card">
+                        <div class="team-avatar-box placeholder-avatar">
+                            <div class="avatar-icon-circle">🎓</div>
+                        </div>
+                        <div class="team-info">
+                            <h3>NZULO Language Academy</h3>
+                            <p class="team-role">Département Formation Professionnelle en Langues</p>
+                            <p class="team-bio">
+                                Formateurs certifiés encadrés par Dieume MIRIMO, appliquant une pédagogie active et
+                                immersive pour accompagner les apprenants vers la maîtrise fluide de l'Anglais, du
+                                Français et de l'Espagnol.
+                            </p>
+                            <div class="team-tags">
+                                <span>🇬🇧 Anglais IT & Pro</span>
+                                <span>🇫🇷 Français & Éloquence</span>
+                                <span>🇪🇸 Espagnol Affaires</span>
+                            </div>
+                            <div class="team-contact-actions">
+                                <a href="#simulator" class="btn btn-sm btn-outline w-100">Faire le Test Gratuit</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MAJOR HIGHLIGHT: NZULO LANGUAGE ACADEMY SECTION -->
+        <section id="formations" class="formations-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag highlight-tag">NZULO LANGUAGE ACADEMY</span>
+                    <h2 class="section-title">Formations en Langues : Anglais • Français • Espagnol</h2>
+                    <p class="section-subtitle">
+                        La branche formation d'élite de NZULO Tech dédiée à propulser votre carrière, réussir vos
+                        entretiens et communiquer sans frontières à l'international.
+                    </p>
+                </div>
+
+                <!-- Detailed Language Pillars -->
+                <div class="languages-grid">
+
+                    <!-- ANGLAIS -->
+                    <div class="language-card card-en">
+                        <div class="lang-card-header">
+                            <div class="lang-flag-badge">🇬🇧</div>
+                            <div class="lang-title-group">
+                                <span class="lang-level-badge">Niveaux A1 à C2</span>
+                                <h3>NZULO English Institute</h3>
+                                <p class="lang-sub">English for Tech, Business & Global Careers</p>
+                            </div>
+                        </div>
+                        <p class="lang-description">
+                            Maîtrisez la langue universelle de la tech et des affaires. Que vous soyez développeur,
+                            ingénieur ou dirigeant, gagnez en fluidité pour animer des réunions Scrum, négocier des
+                            contrats et passer des entretiens d'embauche en anglais sans stress.
+                        </p>
+                        <div class="lang-modules">
+                            <h4>Modules Phares Inclus :</h4>
+                            <ul class="check-list">
+                                <li><strong>Anglais Technique & IT :</strong> Vocabulaire réseau, code, DevOps,
+                                    documentation et stand-ups Agile.</li>
+                                <li><strong>Business English & Négociation :</strong> Emails professionnels percutants,
+                                    argumentation commerciale et animation de meetings.</li>
+                                <li><strong>Prononciation & Accent Reduction :</strong> Fluidité orale, confiance en soi
+                                    et réduction des blocages psychologiques.</li>
+                                <li><strong>Préparation Examens :</strong> IELTS, TOEFL, TOEIC, Duolingo et simulation
+                                    d'entretiens d'embauche anglophones.</li>
+                            </ul>
+                        </div>
+                        <div class="lang-meta-footer">
+                            <div class="meta-item">
+                                <span class="meta-label">Format :</span>
+                                <span class="meta-val">Live 1-to-1 ou Groupe</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Supports :</span>
+                                <span class="meta-val">Syllabus & Audio NZULO Tech</span>
+                            </div>
+                        </div>
+                        <div class="lang-card-actions">
+                            <a href="#simulator" class="btn btn-primary w-100 btn-select-lang"
+                                data-lang="Anglais">Choisir l'Anglais &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- FRANÇAIS -->
+                    <div class="language-card card-fr featured-card">
+                        <div class="featured-ribbon">⭐ Forte Demande</div>
+                        <div class="lang-card-header">
+                            <div class="lang-flag-badge">🇫🇷</div>
+                            <div class="lang-title-group">
+                                <span class="lang-level-badge">Perfectionnement & Pro</span>
+                                <h3>NZULO French Mastery</h3>
+                                <p class="lang-sub">Excellence Rédactionnelle & Éloquence Professionnelle</p>
+                            </div>
+                        </div>
+                        <p class="lang-description">
+                            Perfectionnez votre syntaxe, dominez l'art oratoire et rédigez des documents irréprochables.
+                            Idéal pour les professionnels, cadres et étudiants souhaitant acquérir une communication
+                            écrite et orale remarquable dans l'espace francophone.
+                        </p>
+                        <div class="lang-modules">
+                            <h4>Modules Phares Inclus :</h4>
+                            <ul class="check-list">
+                                <li><strong>Maîtrise de la Grammaire & Orthographe :</strong> Accords délicats, zéro
+                                    faute, rigueur stylistique et élégance.</li>
+                                <li><strong>Rédaction Administrative & Technique :</strong> Rapports d'audit, cahiers
+                                    des charges, synthèses exécutives et comptes-rendus.</li>
+                                <li><strong>Art Oratoire & Prise de Parole :</strong> Structuration de l'argumentation,
+                                    gestion du trac, voix et persuasion.</li>
+                                <li><strong>Français sur Objectifs Spécifiques (FOS) :</strong> Accompagnement pour
+                                    expatriés, diplomates et préparation DELF/DALF.</li>
+                            </ul>
+                        </div>
+                        <div class="lang-meta-footer">
+                            <div class="meta-item">
+                                <span class="meta-label">Format :</span>
+                                <span class="meta-val">Particuliers & Entreprises</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Certificat :</span>
+                                <span class="meta-val">Attestation certifiée NZULO Tech</span>
+                            </div>
+                        </div>
+                        <div class="lang-card-actions">
+                            <a href="#simulator" class="btn btn-primary w-100 btn-select-lang"
+                                data-lang="Français">Choisir le Français &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- ESPAGNOL -->
+                    <div class="language-card card-es">
+                        <div class="lang-card-header">
+                            <div class="lang-flag-badge">🇪🇸</div>
+                            <div class="lang-title-group">
+                                <span class="lang-level-badge">Niveaux A1 à C1</span>
+                                <h3>NZULO Spanish Center</h3>
+                                <p class="lang-sub">Español Práctico, Conversacional y de Negocios</p>
+                            </div>
+                        </div>
+                        <p class="lang-description">
+                            Ouvrez-vous à plus de 500 millions de locuteurs en apprenant l'espagnol grâce à la méthode
+                            communicative NZULO Tech basée sur le dialogue, l'écoute active et des mises en situation
+                            réelles des affaires et du voyage.
+                        </p>
+                        <div class="lang-modules">
+                            <h4>Modules Phares Inclus :</h4>
+                            <ul class="check-list">
+                                <li><strong>Espagnol Général (Débutant à Avancé) :</strong> Bases solides, conjugaison
+                                    intuitive, expressions idiomatiques courantes.</li>
+                                <li><strong>Español de los Negocios :</strong> Vocabulaire commercial, import-export,
+                                    échanges avec l'Espagne et l'Amérique Latine.</li>
+                                <li><strong>Immersion Conversationnelle :</strong> Jeux de rôles, débats d'actualité et
+                                    compréhension auditive sans sous-titres.</li>
+                                <li><strong>Espagnol du Voyageur & DELE :</strong> Autonomie totale pour voyager,
+                                    étudier ou négocier dans un pays hispanophone.</li>
+                            </ul>
+                        </div>
+                        <div class="lang-meta-footer">
+                            <div class="meta-item">
+                                <span class="meta-label">Format :</span>
+                                <span class="meta-val">Séances Live interactives</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Pratique :</span>
+                                <span class="meta-val">70% de pratique orale</span>
+                            </div>
+                        </div>
+                        <div class="lang-card-actions">
+                            <a href="#simulator" class="btn btn-primary w-100 btn-select-lang"
+                                data-lang="Espagnol">Choisir l'Espagnol &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- ART PARLÉ -->
+                    <div class="language-card card-art-parle">
+                        <div class="lang-card-header">
+                            <div class="lang-flag-badge">🎤</div>
+                            <div class="lang-title-group">
+                                <span class="lang-level-badge">Anglais • Espagnol • Swahili • Français</span>
+                                <h3>Art Parlé & Prise de Parole</h3>
+                                <p class="lang-sub">Éloquence, diction et communication professionnelle</p>
+                            </div>
+                        </div>
+                        <p class="lang-description">
+                            Développez une voix claire, assurée et persuasive dans les quatre langues proposées. Cette
+                            formation vous aide à mieux parler en public, gérer le trac, structurer vos idées et
+                            convaincre votre auditoire.
+                        </p>
+                        <div class="lang-modules">
+                            <h4>Modules Phares Inclus :</h4>
+                            <ul class="check-list">
+                                <li><strong>Prise de parole en anglais :</strong> Présentations, réunions
+                                    professionnelles, entretiens et conférences.</li>
+                                <li><strong>Éloquence en espagnol :</strong> Expression naturelle, argumentation et
+                                    communication avec les publics hispanophones.</li>
+                                <li><strong>Art parlé en swahili :</strong> Diction, vocabulaire oral, débats et
+                                    échanges dans l'espace d'Afrique centrale et orientale.</li>
+                                <li><strong>Oratoire en français :</strong> Discours, débats, persuasion, gestion de la
+                                    voix et du langage corporel.</li>
+                            </ul>
+                        </div>
+                        <div class="lang-meta-footer">
+                            <div class="meta-item">
+                                <span class="meta-label">Format :</span>
+                                <span class="meta-val">Ateliers pratiques & conférences</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Langues :</span>
+                                <span class="meta-val">Multilingue</span>
+                            </div>
+                        </div>
+                        <div class="lang-card-actions">
+                            <a href="#simulator" class="btn btn-primary w-100 btn-select-lang"
+                                data-lang="Art parlé">Choisir l'Art Parlé &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Avantages & Méthode Pédagogique -->
+                <div class="pedagogy-box">
+                    <div class="pedagogy-header">
+                        <h3>La Méthode Pédagogique NZULO Tech</h3>
+                        <p>Un encadrement d'excellence supervisé par le CEO Dieume MIRIMO pour des résultats rapides et
+                            mesurables :</p>
+                    </div>
+                    <div class="pedagogy-steps">
+                        <div class="pedagogy-step">
+                            <div class="step-num">01</div>
+                            <h4>Évaluation Initiale Gratuite</h4>
+                            <p>Diagnostic oral et écrit de 20 minutes pour cerner vos points forts, lacunes et objectifs
+                                prioritaires.</p>
+                        </div>
+                        <div class="pedagogy-step">
+                            <div class="step-num">02</div>
+                            <h4>Plan d'Étude Personnalisé</h4>
+                            <p>Création d'un syllabus taillé sur mesure selon vos disponibilités (soir, week-end ou
+                                journée) et votre domaine professionnel.</p>
+                        </div>
+                        <div class="pedagogy-step">
+                            <div class="step-num">03</div>
+                            <h4>Séances Immersives Live</h4>
+                            <p>Cours interactifs en direct via Google Meet, Zoom ou WhatsApp avec exercices pratiques et
+                                mises en situation réelles.</p>
+                        </div>
+                        <div class="pedagogy-step">
+                            <div class="step-num">04</div>
+                            <h4>Certification NZULO Tech</h4>
+                            <p>Quiz continus, feedbacks personnalisés et remise d'une attestation valorisant votre
+                                progression sur votre CV et LinkedIn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE LANGUAGE SIMULATOR & TEST -->
+        <section id="simulator" class="simulator-section">
+            <div class="container">
+                <div class="simulator-wrapper">
+                    <div class="simulator-intro">
+                        <span class="section-tag">SIMULATEUR NZULO ACADEMY</span>
+                        <h2>Calculez Votre Programme Linguistique Idéal</h2>
+                        <p>Sélectionnez vos critères pour obtenir instantanément une estimation de votre parcours de
+                            formation et réserver votre premier test gratuit avec l'équipe pédagogique de NZULO Tech.
+                        </p>
+
+                        <div class="simulator-form">
+                            <!-- Étape 1 : Langue -->
+                            <div class="form-group-sim">
+                                <label class="sim-label">1. Choisissez la langue souhaitée :</label>
+                                <div class="sim-options-grid" id="sim-lang-options">
+                                    <button type="button" class="sim-opt-btn active" data-value="Anglais">
+                                        <span class="opt-flag">🇬🇧</span>
+                                        <span class="opt-text">Anglais</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn" data-value="Français">
+                                        <span class="opt-flag">🇫🇷</span>
+                                        <span class="opt-text">Français</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn" data-value="Espagnol">
+                                        <span class="opt-flag">🇪🇸</span>
+                                        <span class="opt-text">Espagnol</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn" data-value="Swahili">
+                                        <span class="opt-flag">🌍</span>
+                                        <span class="opt-text">Swahili</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn" data-value="Art parlé">
+                                        <span class="opt-flag">🎤</span>
+                                        <span class="opt-text">Art parlé</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Étape 2 : Niveau actuel -->
+                            <div class="form-group-sim">
+                                <label class="sim-label">2. Votre niveau de départ estimé :</label>
+                                <div class="sim-options-grid" id="sim-level-options">
+                                    <button type="button" class="sim-opt-btn active" data-value="Débutant (A1-A2)">
+                                        <span class="opt-text">🌱 Débutant (A1-A2)</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn" data-value="Intermédiaire (B1-B2)">
+                                        <span class="opt-text">🚀 Intermédiaire (B1-B2)</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn" data-value="Avancé (C1-C2)">
+                                        <span class="opt-text">🎯 Avancé (C1-C2)</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Étape 3 : Objectif -->
+                            <div class="form-group-sim">
+                                <label class="sim-label">3. Votre objectif prioritaire :</label>
+                                <div class="sim-options-grid" id="sim-goal-options">
+                                    <button type="button" class="sim-opt-btn active"
+                                        data-value="Carrière IT & Entretiens">
+                                        <span class="opt-text">💻 Carrière IT & Entretiens</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn" data-value="Conversation Fluide & Voyage">
+                                        <span class="opt-text">✈️ Conversation & Voyage</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn" data-value="Affaires & Négociation Pro">
+                                        <span class="opt-text">💼 Affaires & Négociation</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn" data-value="Certification & Concours">
+                                        <span class="opt-text">📜 Certification & Concours</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Étape 4 : Rythme -->
+                            <div class="form-group-sim">
+                                <label class="sim-label">4. Rythme d'apprentissage souhaité :</label>
+                                <div class="sim-options-grid" id="sim-pace-options">
+                                    <button type="button" class="sim-opt-btn" data-value="Intensif (4h à 6h / semaine)">
+                                        <span class="opt-text">⚡ Intensif (4-6h/semaine)</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn active"
+                                        data-value="Régulier (2h à 3h / semaine)">
+                                        <span class="opt-text">⚖️ Régulier (2-3h/semaine)</span>
+                                    </button>
+                                    <button type="button" class="sim-opt-btn" data-value="Flexible (1h à 2h / semaine)">
+                                        <span class="opt-text">🕊️ Flexible (1-2h/semaine)</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Résultat dynamique du simulateur -->
+                    <div class="simulator-result-card" id="sim-result-box">
+                        <div class="result-badge">PLAN NZULO TECH RECOMMANDÉ</div>
+                        <h3 class="result-title" id="sim-result-title">Programme Anglais IT & Carrière</h3>
+
+                        <div class="result-stats">
+                            <div class="r-stat">
+                                <span class="r-label">Durée Estimée :</span>
+                                <strong id="sim-result-duration">8 à 12 Semaines</strong>
+                            </div>
+                            <div class="r-stat">
+                                <span class="r-label">Volume Recommandé :</span>
+                                <strong id="sim-result-hours">24 à 36 Heures de cours live</strong>
+                            </div>
+                            <div class="r-stat">
+                                <span class="r-label">Format :</span>
+                                <strong id="sim-result-format">Coaching 1-to-1 Live + Supports NZULO Tech</strong>
+                            </div>
+                        </div>
+
+                        <div class="result-curriculum">
+                            <h4>Modules Inclus dans cette Formule :</h4>
+                            <ul id="sim-result-modules" class="check-list">
+                                <li>Vocabulaire technique et simulation d'entretiens d'embauche</li>
+                                <li>Pratique orale intensive et aisance conversationnelle</li>
+                                <li>Rédaction de correspondances et documentation technique</li>
+                                <li>Accompagnement continu via WhatsApp et exercices hebdomadaires</li>
+                            </ul>
+                        </div>
+
+                        <div class="result-cta-actions">
+                            <button id="sim-whatsapp-btn" class="btn btn-whatsapp w-100">
+                                <img src="whatsapp.png" alt="WhatsApp" width="20" height="20" loading="lazy"
+                                    decoding="async" />
+                                <span>Réserver ce programme sur WhatsApp</span>
+                            </button>
+                            <a href="#contact" class="btn btn-outline w-100 btn-apply-sim">
+                                Transmettre au Cabinet NZULO Tech
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES IT & RÉSEAUX -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">NZULO ENGINEERING SOLUTIONS</span>
+                    <h2 class="section-title">Solutions Informatiques, Réseaux & Cybersécurité</h2>
+                    <p class="section-subtitle">
+                        Des infrastructures robustes, sécurisées et évolutives déployées par NZULO Tech sous la
+                        supervision du CEO Dieume MIRIMO.
+                    </p>
+                </div>
+
+                <!-- Filtres Services IT -->
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">Tous les Services</button>
+                    <button class="filter-btn" data-filter="reseau">Programmation & Réseaux</button>
+                    <button class="filter-btn" data-filter="securite">Cybersécurité & Audits</button>
+                    <button class="filter-btn" data-filter="web">Développement Web</button>
+                    <button class="filter-btn" data-filter="support">Maintenance & Support</button>
+                </div>
+
+                <div class="services-grid">
+
+                    <!-- Service 1 -->
+                    <div class="service-card" data-category="reseau">
+                        <div class="service-icon-box">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>Architecture & Programmation Réseau</h3>
+                        <p>Conception, implémentation et configuration avancée d'équipements réseaux (Cisco, Mikrotik,
+                            HP). Déploiement de protocoles de routage (OSPF, BGP) et segmentation VLAN.</p>
+                        <ul class="service-bullets">
+                            <li>Topologies LAN / WAN haute disponibilité</li>
+                            <li>Automatisation réseau (Python & Bash scripting)</li>
+                            <li>Interconnexions sécurisées et tunnels VPN IPsec</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Demander un devis NZULO Tech &rarr;</a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card" data-category="securite">
+                        <div class="service-icon-box">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Cybersécurité & Audit des Systèmes</h3>
+                        <p>Évaluation rigoureuse des vulnérabilités de votre réseau, tests d'intrusion, durcissement des
+                            accès et déploiement de pare-feu de nouvelle génération (pfSense, Fortinet).</p>
+                        <ul class="service-bullets">
+                            <li>Audits d'infrastructure et analyse de risques</li>
+                            <li>Configuration IDS/IPS et filtrage applicatif</li>
+                            <li>Sensibilisation anti-phishing pour le personnel</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Sécuriser mon entreprise &rarr;</a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card" data-category="support">
+                        <div class="service-icon-box">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Maintenance & Surveillance Réseau 24/7</h3>
+                        <p>Surveillance continue, diagnostic préventif et résolution rapide des pannes de connectivité
+                            pour éliminer tout temps d'arrêt coûteux de vos activités.</p>
+                        <ul class="service-bullets">
+                            <li>Monitoring de la bande passante et de l'état des liens</li>
+                            <li>Mises à jour des firmwares et sauvegardes des configs</li>
+                            <li>Assistance technique sur site et télémaintenance</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Mettre en place un contrat &rarr;</a>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card" data-category="web">
+                        <div class="service-icon-box">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Développement Web Moderne & Sur-Mesure</h3>
+                        <p>Création de sites vitrines professionnels, plateformes web interactives et applications
+                            métiers adaptées aux ordinateurs, tablettes et smartphones.</p>
+                        <ul class="service-bullets">
+                            <li>Interfaces utilisateur modernes (UI/UX soignée)</li>
+                            <li>Optimisation de la vitesse et référencement SEO</li>
+                            <li>Intégration d'API, bases de données et formulaires</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Lancer un projet web &rarr;</a>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card" data-category="reseau">
+                        <div class="service-icon-box">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Automatisation & Intégration Systèmes</h3>
+                        <p>Optimisation des flux de travail grâce au scripting de tâches répétitives, gestion
+                            automatisée des configurations et alertes instantanées sur incidents.</p>
+                        <ul class="service-bullets">
+                            <li>Sauvegarde automatique des switchs & routeurs</li>
+                            <li>Alertes Telegram / Email en cas de coupure de liaison</li>
+                            <li>Scripts de reporting de consommation réseau</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Automatiser mes tâches &rarr;</a>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card" data-category="securite">
+                        <div class="service-icon-box">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none"
+                                stroke-width="2">
+                                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                                <polyline points="7 3 7 8 15 8"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Plan de Reprise d'Activité & Sauvegardes</h3>
+                        <p>Mise en place de stratégies de sauvegarde 3-2-1 infaillibles, chiffrement des données
+                            sensibles et protocoles de restauration d'urgence post-sinistre.</p>
+                        <ul class="service-bullets">
+                            <li>Stockage distant chiffré et redondant</li>
+                            <li>Tests réguliers de restauration de données</li>
+                            <li>Documentation d'urgence pour vos équipes IT</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Protéger mes données &rarr;</a>
+                    </div>
+
+                    <!-- Service 7 -->
+                    <div class="service-card" data-category="support">
+                        <div class="service-icon-box">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none"
+                                stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12" y2="18"></line>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>Décodage de Téléphones & Ordinateurs</h3>
+                        <p>Prise en charge technique autorisée pour le déverrouillage, le diagnostic et la remise en
+                            état de téléphones et de PC de toutes les marques.</p>
+                        <ul class="service-bullets">
+                            <li>Diagnostic matériel et logiciel de téléphones et ordinateurs</li>
+                            <li>Décodage, déverrouillage et restauration selon les possibilités du fabricant</li>
+                            <li>Réinstallation du système, mises à jour et récupération de données compatibles</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Demander une assistance &rarr;</a>
+                    </div>
+
+                    <!-- Service 8 -->
+                    <div class="service-card" data-category="securite">
+                        <div class="service-icon-box">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" fill="none"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path
+                                    d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14M16.24 7.76a6 6 0 0 1 0 8.48M7.76 16.24a6 6 0 0 1 0-8.48">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Traçage d'appareils perdus ou volés</h3>
+                        <p>Accompagnement pour localiser et protéger les téléphones, ordinateurs et tablettes perdus ou
+                            volés, dans le respect des procédures légales.</p>
+                        <ul class="service-bullets">
+                            <li>Utilisation des services officiels de localisation des fabricants</li>
+                            <li>Aide au verrouillage à distance et à la protection des données</li>
+                            <li>Conseil pour signaler l'appareil aux autorités compétentes</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Signaler un appareil perdu &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO / CASE STUDIES -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">RÉALISATIONS NZULO TECH</span>
+                    <h2 class="section-title">Missions & Études de Cas Réalisées</h2>
+                    <p class="section-subtitle">Exemples concrets de déploiements d'infrastructures, de solutions
+                        digitales et de programmes de formation menés avec succès par NZULO Tech.</p>
+                </div>
+
+                <div class="projects-filter-nav">
+                    <button class="proj-filter-btn active" data-pfilter="all">Tous les Projets</button>
+                    <button class="proj-filter-btn" data-pfilter="reseau">Réseau & Infra</button>
+                    <button class="proj-filter-btn" data-pfilter="formation">Formations Langues</button>
+                    <button class="proj-filter-btn" data-pfilter="web">Web & Digital</button>
+                    <button class="proj-filter-btn" data-pfilter="securite">Cybersécurité</button>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Projet 1 -->
+                    <div class="project-card" data-pcat="reseau">
+                        <div class="project-img-wrapper">
+                            <img src="animation1.png" alt="Architecture Réseau Multi-Sites" loading="lazy"
+                                decoding="async" width="1000" height="627" />
+                            <div class="proj-tag-badge">Réseau</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Interconnexion Sécurisée Multi-Sites d'Entreprise</h3>
+                            <p>Déploiement d'une architecture réseau interconnectant 3 sites distants avec des tunnels
+                                VPN IPsec chiffrés et basculement automatique des liens 4G/Fibre.</p>
+                            <div class="project-tags">
+                                <span>Cisco</span>
+                                <span>Mikrotik</span>
+                                <span>VPN IPsec</span>
+                                <span>VLANs</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline btn-project-modal" data-proj="1">Voir les
+                                Détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="project-card" data-pcat="formation">
+                        <div class="project-img-wrapper">
+                            <img src="animation4.png" alt="Bootcamp Anglais IT pour Développeurs" loading="lazy"
+                                decoding="async" width="866" height="316" />
+                            <div class="proj-tag-badge">Formation</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Bootcamp "English for Tech" pour 30 Développeurs</h3>
+                            <p>Programme intensif de 10 semaines préparant des ingénieurs et développeurs africains à
+                                réussir leurs entretiens techniques auprès d'entreprises internationales.</p>
+                            <div class="project-tags">
+                                <span>Anglais IT</span>
+                                <span>Tech Interviews</span>
+                                <span>Live Coaching</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline btn-project-modal" data-proj="2">Voir les
+                                Détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="project-card" data-pcat="securite">
+                        <div class="project-img-wrapper">
+                            <img src="animation2.png" alt="Audit et Sécurisation Réseau PME" loading="lazy"
+                                decoding="async" width="1000" height="407" />
+                            <div class="proj-tag-badge">Sécurité</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Audit & Durcissement Sécurité d'une Infrastructure</h3>
+                            <p>Analyse complète des vulnérabilités, mise en place d'un pare-feu pfSense avec filtrage
+                                d'URL, blocage des attaques par force brute et segmentation des flux.</p>
+                            <div class="project-tags">
+                                <span>pfSense</span>
+                                <span>Audit Sécurité</span>
+                                <span>Anti-DDoS</span>
+                                <span>IDS/IPS</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline btn-project-modal" data-proj="3">Voir les
+                                Détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Projet 4 -->
+                    <div class="project-card" data-pcat="web">
+                        <div class="project-img-wrapper">
+                            <img src="animation3.png" alt="Plateforme Web Professionnelle" loading="lazy"
+                                decoding="async" width="473" height="314" />
+                            <div class="proj-tag-badge">Web</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Plateforme Web Responsive & Optimisation SEO</h3>
+                            <p>Conception d'une vitrine web ultra-rapide (score de performance 99 sur Google Lighthouse)
+                                avec mode sombre, animations fluides et formulaire intelligent.</p>
+                            <div class="project-tags">
+                                <span>HTML5/CSS3</span>
+                                <span>JavaScript ES6</span>
+                                <span>Responsive</span>
+                                <span>SEO</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline btn-project-modal" data-proj="4">Voir les
+                                Détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Projet 5 -->
+                    <div class="project-card" data-pcat="formation">
+                        <div class="project-img-wrapper">
+                            <img src="animation4.png" alt="Español Comercial pour Cadres" loading="lazy"
+                                decoding="async" width="866" height="316" />
+                            <div class="proj-tag-badge">Formation</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Programme "Español de los Negocios" pour Négociateurs</h3>
+                            <p>Formation accélérée de 8 semaines en espagnol des affaires pour une équipe commerciale
+                                travaillant avec des partenaires d'Amérique Latine.</p>
+                            <div class="project-tags">
+                                <span>Espagnol Pro</span>
+                                <span>Commerce International</span>
+                                <span>Négociation</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline btn-project-modal" data-proj="5">Voir les
+                                Détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Projet 6 -->
+                    <div class="project-card" data-pcat="reseau">
+                        <div class="project-img-wrapper">
+                            <img src="animation1.png" alt="Automatisation des Sauvegardes Réseau" loading="lazy"
+                                decoding="async" width="1000" height="627" />
+                            <div class="proj-tag-badge">Réseau</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Sauvegarde Automatisée des Équipements Réseau</h3>
+                            <p>Script Python autonome extrayant chaque nuit la configuration de 25 switchs et routeurs
+                                avec envoi de rapports chiffrés et alertes instantanées.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Netmiko</span>
+                                <span>SSH</span>
+                                <span>Telegram Bot</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline btn-project-modal" data-proj="6">Voir les
+                                Détails</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULES & TARIFS -->
+        <section id="tarifs" class="tarifs-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">TARIFS & FORMULES D'ENTREPRISE</span>
+                    <h2 class="section-title">Des Formules Claires et Adaptées à Vos Ambitions</h2>
+                    <p class="section-subtitle">Investissez dans votre avenir ou sécurisez votre organisation avec des
+                        forfaits transparents signés NZULO Tech.</p>
+                </div>
+
+                <div class="tarifs-grid">
+
+                    <!-- Pack Langue 1 -->
+                    <div class="tarif-card">
+                        <div class="tarif-header">
+                            <span class="tarif-badge">Individuel</span>
+                            <h3>Formule Langue "Découverte"</h3>
+                            <p>Idéal pour démarrer ou préparer un voyage (Anglais, Français ou Espagnol)</p>
+                            <div class="tarif-price">
+                                <span class="price-val">Sur Mesure</span>
+                                <span class="price-period">/ pack 10h ou 20h</span>
+                            </div>
+                        </div>
+                        <ul class="tarif-features check-list">
+                            <li>100% Cours individuels en visioconférence</li>
+                            <li>Horaires flexibles (soir / week-end)</li>
+                            <li>Test de niveau initial gratuit</li>
+                            <li>Supports de cours numériques NZULO Tech fournis</li>
+                            <li>Exercices et corrections personnalisées</li>
+                        </ul>
+                        <div class="tarif-footer">
+                            <a href="#contact" class="btn btn-outline w-100 btn-select-tarif"
+                                data-formula="Formule Langue Découverte">Demander un Devis</a>
+                        </div>
+                    </div>
+
+                    <!-- Pack Langue 2 (Featured) -->
+                    <div class="tarif-card featured-tarif">
+                        <div class="featured-ribbon">⭐ Recommandé</div>
+                        <div class="tarif-header">
+                            <span class="tarif-badge">Pro & Carrière</span>
+                            <h3>Formule Langue "Pro & Business"</h3>
+                            <p>Pour ingénieurs, cadres et candidats visant des opportunités internationales</p>
+                            <div class="tarif-price">
+                                <span class="price-val">Pack Intensif</span>
+                                <span class="price-period">/ 30h à 50h de coaching</span>
+                            </div>
+                        </div>
+                        <ul class="tarif-features check-list">
+                            <li>Anglais IT, Business English ou Espagnol Pro</li>
+                            <li>Simulation intensive d'entretiens d'embauche</li>
+                            <li>Rédaction de CV et profil LinkedIn international</li>
+                            <li>Assistance directe WhatsApp avec le formateur en chef</li>
+                            <li>Attestation certifiée NZULO Tech remise en fin de cursus</li>
+                            <li>Garantie de progression mesurée</li>
+                        </ul>
+                        <div class="tarif-footer">
+                            <a href="#contact" class="btn btn-primary w-100 btn-select-tarif"
+                                data-formula="Formule Langue Pro & Business">Postuler à cette Formule</a>
+                        </div>
+                    </div>
+
+                    <!-- Pack IT 1 -->
+                    <div class="tarif-card">
+                        <div class="tarif-header">
+                            <span class="tarif-badge">Entreprises</span>
+                            <h3>Pack "Audit & Sécurité Réseau"</h3>
+                            <p>Pour les PME, écoles et organisations souhaitant un réseau fiable</p>
+                            <div class="tarif-price">
+                                <span class="price-val">Sur Devis</span>
+                                <span class="price-period">/ selon l'infrastructure</span>
+                            </div>
+                        </div>
+                        <ul class="tarif-features check-list">
+                            <li>Audit complet des failles et performances</li>
+                            <li>Configuration firewall & segmentation VLAN</li>
+                            <li>Interconnexion VPN multi-sites sécurisée</li>
+                            <li>Rapport technique détaillé et recommandations</li>
+                            <li>Support post-déploiement 30 jours inclus</li>
+                        </ul>
+                        <div class="tarif-footer">
+                            <a href="#contact" class="btn btn-outline w-100 btn-select-tarif"
+                                data-formula="Pack Audit & Sécurité Réseau">Demander une Évaluation</a>
+                        </div>
+                    </div>
+
+                    <!-- Pack Web -->
+                    <div class="tarif-card">
+                        <div class="tarif-header">
+                            <span class="tarif-badge">Digital</span>
+                            <h3>Pack "Création Web & Présence"</h3>
+                            <p>Site web moderne, responsive et optimisé pour générer des clients</p>
+                            <div class="tarif-price">
+                                <span class="price-val">Forfait Web</span>
+                                <span class="price-period">/ clé en main</span>
+                            </div>
+                        </div>
+                        <ul class="tarif-features check-list">
+                            <li>Site moderne responsive 100% mobile-friendly</li>
+                            <li>Mode sombre / clair & animations soignées</li>
+                            <li>Formulaire de contact relié à WhatsApp & Email</li>
+                            <li>Optimisation SEO & vitesse de chargement &lt; 1s</li>
+                            <li>Formation à l'administration du site</li>
+                        </ul>
+                        <div class="tarif-footer">
+                            <a href="#contact" class="btn btn-outline w-100 btn-select-tarif"
+                                data-formula="Pack Création Web">Lancer mon Projet Web</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">TÉMOIGNAGES & AVIS</span>
+                    <h2 class="section-title">Ce Que Disent les Partenaires de NZULO Tech</h2>
+                    <p class="section-subtitle">La satisfaction de nos apprenants et entreprises partenaires est notre
+                        plus grande fierté.</p>
+                </div>
+
+                <div class="testimonials-grid">
+
+                    <div class="testimonial-card">
+                        <div class="testi-rating">★★★★★</div>
+                        <p class="testi-text">
+                            « Grâce à la formation en Anglais Technique de la NZULO Language Academy, j'ai surmonté mon
+                            blocage à l'oral. Trois semaines plus tard, j'ai passé mon entretien en anglais pour une
+                            boîte tech canadienne et j'ai été retenu ! Dieume MIRIMO a une approche pédagogique
+                            extraordinaire. »
+                        </p>
+                        <div class="testi-author">
+                            <div class="avatar-letter">MK</div>
+                            <div class="author-info">
+                                <strong>Michel K.</strong>
+                                <span>Développeur Full-Stack & Apprenant Anglais</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testi-rating">★★★★★</div>
+                        <p class="testi-text">
+                            « NZULO Tech a complètement restructuré le réseau de notre entreprise. Nous subissions des
+                            coupures incessantes et des lenteurs de connectivité. Dieume MIRIMO a personnellement
+                            supervisé la configuration de nos routeurs Mikrotik et séparé les flux avec des VLANs.
+                            Depuis, zéro panne. »
+                        </p>
+                        <div class="testi-author">
+                            <div class="avatar-letter">AB</div>
+                            <div class="author-info">
+                                <strong>Alain B.</strong>
+                                <span>Directeur des Opérations (PME)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testi-rating">★★★★★</div>
+                        <p class="testi-text">
+                            « Le cours d'Espagnol des Affaires dispensé par NZULO Tech m'a permis d'initier des échanges
+                            commerciaux directs avec des fournisseurs en Espagne sans passer par un interprète. Les
+                            cours en visioconférence sont fluides, dynamiques et concrets. »
+                        </p>
+                        <div class="testi-author">
+                            <div class="avatar-letter">SC</div>
+                            <div class="author-info">
+                                <strong>Sandra C.</strong>
+                                <span>Responsable Import-Export</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ACTUALITES SECTION -->
+        <section id="actualites" class="actualites-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">ACTUALITÉS NZULO TECH</span>
+                    <h2 class="section-title">Dernières nouvelles</h2>
+                    <p class="section-subtitle">
+                        Retrouvez les annonces officielles, nouvelles formations et informations importantes de
+                        NZULO Tech directement sur notre site.
+                    </p>
+                </div>
+
+                <div class="actualites-grid">
+                    <article class="actualite-card">
+                        <div class="actualite-meta">
+                            <span class="actualite-category">Académie</span>
+                            <time datetime="2026-11-19">19 novembre 2026</time>
+                        </div>
+                        <h3>Inscriptions ouvertes aux formations linguistiques</h3>
+                        <p>
+                            Les nouveaux groupes d'Anglais, Français et Espagnol sont ouverts. Test de niveau gratuit
+                            et accompagnement personnalisé disponibles.
+                        </p>
+                        <a href="#simulator" class="actualite-link">Voir les inscriptions &rarr;</a>
+                    </article>
+
+                    <article class="actualite-card">
+                        <div class="actualite-meta">
+                            <span class="actualite-category">Solutions IT</span>
+                            <time datetime="2026-11-19">19 novembre 2026</time>
+                        </div>
+                        <h3>Nouvelles prestations réseaux et cybersécurité</h3>
+                        <p>
+                            NZULO Tech accompagne les entreprises dans l'audit, la sécurisation et l'optimisation de
+                            leurs infrastructures informatiques.
+                        </p>
+                        <a href="#services" class="actualite-link">Découvrir les services &rarr;</a>
+                    </article>
+
+                    <article class="actualite-card">
+                        <div class="actualite-meta">
+                            <span class="actualite-category">Entreprise</span>
+                            <time datetime="2026-11-19">19 novembre 2026</time>
+                        </div>
+                        <h3>Une expertise locale au service de projets internationaux</h3>
+                        <p>
+                            Retrouvez les solutions technologiques et les programmes de formation conçus pour répondre
+                            aux besoins professionnels à Goma et à distance.
+                        </p>
+                        <a href="#projects" class="actualite-link">Voir les réalisations &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Tout Ce Que Vous Devez Savoir sur NZULO Tech</h2>
+                    <p class="section-subtitle">Vous avez des interrogations sur nos services IT ou nos formations en
+                        langues ? Trouvez les réponses immédiates ci-dessous.</p>
+                </div>
+
+                <div class="faq-accordion" id="faq-accordion">
+
+                    <div class="faq-item active">
+                        <button class="faq-question" aria-expanded="true">
+                            <span>Qu'est-ce que NZULO Tech et qui est son CEO ?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>NZULO Tech est une entreprise technologique et un centre d'enseignement fondé et dirigé
+                                par Dieume MIRIMO (CEO & Ingénieur Réseau). Notre mission se résume par notre devise «
+                                CONNECT • INNOVATE • EMPOWER » : concevoir des infrastructures réseaux fiables,
+                                sécuriser les données et former les futurs leaders aux langues internationales (Anglais,
+                                Français, Espagnol).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Comment se déroulent les formations en langues (Anglais, Français, Espagnol) ?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Les cours se déroulent en direct par visioconférence (Google Meet, Zoom ou WhatsApp) avec
+                                partage d'écran et support interactif. Chaque session comprend des mises en situation
+                                orales, des fiches de synthèse NZULO Tech, des exercices audio et un suivi personnalisé
+                                après le cours.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Le test de niveau initial est-il réellement gratuit ?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, absolument. Nous organisons un échange préliminaire sans engagement de 20 minutes
+                                pour évaluer votre niveau d'expression et de compréhension orale, déterminer vos
+                                objectifs spécifiques et vous recommander le volume d'heures adéquat.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Délivrez-vous une attestation officielle à la fin de la formation ?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui. À l'issue de votre cursus et après validation du bilan final, une attestation
+                                officielle délivrée par NZULO Tech (selon l'échelle internationale du CECRL : A1, A2,
+                                B1, B2, C1) vous est remise pour enrichir votre CV ou justifier de vos compétences
+                                auprès de votre employeur.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>NZULO Tech intervient-elle à distance pour les services réseaux et informatiques
+                                ?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui, une grande majorité des configurations réseaux (Cisco, Mikrotik, pfSense), audits de
+                                sécurité, automatisations de scripts et créations de sites web sont gérées à distance
+                                via accès sécurisés (SSH, VPN, AnyDesk/TeamViewer). Pour les interventions physiques
+                                (câblage, installation sur site), notre équipe se déplace dans la région de Goma et
+                                environs.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Quels sont les modes de paiement acceptés par NZULO Tech ?</span>
+                            <span class="faq-icon">&plus;</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nous acceptons les paiements via Mobile Money (M-Pesa, Airtel Money, Orange Money),
+                                virements bancaires professionnels, ainsi que les plateformes de transfert international
+                                (Western Union, MoneyGram, PayPal) selon votre localisation.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">CONTACT & PRISE DE RENDEZ-VOUS</span>
+                    <h2 class="section-title">Contactez le Cabinet de la Direction NZULO Tech</h2>
+                    <p class="section-subtitle">Un projet informatique à déployer ? Une inscription à notre académie de
+                        langues ? Contactez Dieume MIRIMO (CEO) et l'équipe de NZULO Tech dès aujourd'hui.</p>
+                </div>
+
+                <div class="contact-layout">
+
+                    <!-- Coordonnées directes -->
+                    <div class="contact-info-panel">
+                        <h3>Coordonnées Officielles</h3>
+                        <p class="panel-desc">La direction de NZULO Tech vous répond rapidement pour étudier vos besoins
+                            et vous proposer des solutions concrètes.</p>
+
+                        <div class="contact-items-list">
+
+                            <a href="https://wa.me/243847988507" class="contact-card whatsapp-card" target="_blank"
+                                rel="noopener">
+                                <div class="c-icon">
+                                    <img src="whatsapp.png" alt="WhatsApp" width="28" height="28" loading="lazy"
+                                        decoding="async" />
+                                </div>
+                                <div class="c-detail">
+                                    <span class="c-title">WhatsApp Direction</span>
+                                    <strong class="c-val">+243 847 988 507</strong>
+                                    <span class="c-sub">Échanger en direct (Réponse en &lt; 15 min)</span>
+                                </div>
+                            </a>
+
+                            <a href="mailto:barakamirimo@gmail.com" id="link-email" class="contact-card email-card">
+                                <div class="c-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none"
+                                        stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="c-detail">
+                                    <span class="c-title">Email Professionnel</span>
+                                    <strong class="c-val">barakamirimo@gmail.com</strong>
+                                    <span class="c-sub">Pour devis d'entreprise & syllabus</span>
+                                </div>
+                            </a>
+
+                            <a href="https://instagram.com/barakamirimonzulo" id="link-instagram"
+                                class="contact-card instagram-card" target="_blank" rel="noopener">
+                                <div class="c-icon">
+                                    <img src="instagram.png" alt="Instagram" width="28" height="28" loading="lazy"
+                                        decoding="async" />
+                                </div>
+                                <div class="c-detail">
+                                    <span class="c-title">Instagram Officiel</span>
+                                    <strong class="c-val">@barakamirimonzulo</strong>
+                                    <span class="c-sub">Actualités NZULO Tech & Conseils</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-card location-card">
+                                <div class="c-icon">
+                                    <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" fill="none"
+                                        stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="c-detail">
+                                    <span class="c-title">Siège & Déplacements</span>
+                                    <strong class="c-val">Goma, RDC & À Distance International</strong>
+                                    <span class="c-sub">Missions sur site et interventions internationales</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="availability-badge">
+                            <span class="status-indicator"></span>
+                            <span>Statut NZULO Tech : <strong>Ouvert aux nouveaux contrats & admissions
+                                    2026</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire de Contact Intelligent -->
+                    <div class="contact-form-panel">
+                        <div class="form-wrapper">
+                            <h3>Transmettre une Demande Officielle</h3>
+                            <p>Remplissez ce formulaire pour recevoir un devis d'entreprise ou réserver votre test de
+                                niveau en langue :</p>
+
+                            <form id="portfolio-contact-form" novalidate>
+                                <div class="form-row">
+                                    <div class="form-col">
+                                        <label for="contact-name">Votre Nom Complet / Entreprise *</label>
+                                        <input type="text" id="contact-name" name="name"
+                                            placeholder="Ex: Jean Mukendi (Directeur IT)" required />
+                                    </div>
+                                    <div class="form-col">
+                                        <label for="contact-email">Votre Adresse Email *</label>
+                                        <input type="email" id="contact-email" name="email"
+                                            placeholder="Ex: jean@entreprise.com" required />
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-col">
+                                        <label for="contact-phone">Téléphone / WhatsApp *</label>
+                                        <input type="tel" id="contact-phone" name="phone"
+                                            placeholder="Ex: +243 847 000 000" required />
+                                    </div>
+                                    <div class="form-col">
+                                        <label for="contact-service">Pôle ou Service Souhaité *</label>
+                                        <select id="contact-service" name="service" required>
+                                            <option value="" disabled selected>Sélectionnez un service...</option>
+                                            <optgroup label="NZULO Language Academy">
+                                                <option value="Formation en Anglais">Formation en Anglais (English for
+                                                    Tech & Business)</option>
+                                                <option value="Formation en Français">Formation en Français (Rédaction &
+                                                    Éloquence)</option>
+                                                <option value="Formation en Espagnol">Formation en Espagnol (Affaires &
+                                                    Voyage)</option>
+                                                <option value="Test de niveau multilingue">Test de niveau multilingue
+                                                    gratuit</option>
+                                            </optgroup>
+                                            <optgroup label="NZULO Engineering Solutions">
+                                                <option value="Programmation & Configuration Réseau">Architecture &
+                                                    Programmation Réseau</option>
+                                                <option value="Maintenance Réseau & Support IT">Maintenance Réseau &
+                                                    Support IT</option>
+                                                <option value="Cybersécurité & Audit de Système">Cybersécurité & Audit
+                                                    de Système</option>
+                                                <option value="Création de Site Web Moderne">Création de Site Web &
+                                                    Solution Cloud</option>
+                                                <option value="Autre projet spécifique">Autre projet spécifique
+                                                    d'entreprise</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-level">Niveau Actuel ou Envergure du Projet (Optionnel)</label>
+                                    <input type="text" id="contact-level" name="level"
+                                        placeholder="Ex: Débutant en anglais / Entreprise de 50 collaborateurs / Refonte réseau" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-message">Votre Message / Cahier des Charges *</label>
+                                    <textarea id="contact-message" name="message" rows="5"
+                                        placeholder="Décrivez votre besoin, vos objectifs ou vos délais souhaités..."
+                                        required></textarea>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100" id="btn-submit-form">
+                                        <span>Envoyer au Cabinet NZULO Tech</span>
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="form-fallback-note">
+                                    <span>⚡ Préférez-vous échanger immédiatement avec le CEO ?</span>
+                                    <button type="button" id="btn-direct-whatsapp-send" class="link-btn">
+                                        Envoyer directement ce message sur WhatsApp &rarr;
+                                    </button>
+                                </div>
+
+                                <div id="form-alert" class="form-feedback" style="display:none;"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top-grid">
+
+                <div class="footer-col brand-col">
+                    <div class="brand-logo footer-logo">
+                        <img src="nzulo-logo-clean.png" alt="Logo NZULO Tech" class="logo-img" loading="lazy"
+                            decoding="async" width="180" height="56" />
+                    </div>
+                    <p class="footer-desc">
+                        Entreprise d'ingénierie technologique et académie de formation professionnelle en langues,
+                        fondée et dirigée par <strong>Dieume MIRIMO</strong> (CEO). Nous propulsons les organisations
+                        vers l'excellence digitale et internationale.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/243847988507" class="footer-social-icon" target="_blank" rel="noopener"
+                            aria-label="WhatsApp Direction">
+                            <img src="whatsapp.png" alt="WhatsApp" width="20" height="20" loading="lazy"
+                                decoding="async" />
+                        </a>
+                        <a href="https://instagram.com/barakamirimonzulo" class="footer-social-icon" target="_blank"
+                            rel="noopener" aria-label="Instagram">
+                            <img src="instagram.png" alt="Instagram" width="20" height="20" loading="lazy"
+                                decoding="async" />
+                        </a>
+                        <a href="mailto:barakamirimo@gmail.com" class="footer-social-icon" aria-label="Email">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>NZULO Language Academy</h4>
+                    <ul class="footer-links">
+                        <li><a href="#formations">🇬🇧 Formation en Anglais (Tech & Business)</a></li>
+                        <li><a href="#formations">🇫🇷 Formation en Français (Rédaction & Éloquence)</a></li>
+                        <li><a href="#formations">🇪🇸 Formation en Espagnol (Affaires & Voyage)</a></li>
+                        <li><a href="#simulator">Simulateur & Test de Niveau Gratuit</a></li>
+                        <li><a href="#tarifs">Forfaits d'Apprentissage Certifiés</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>NZULO Engineering Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Architecture & Programmation Réseau</a></li>
+                        <li><a href="#services">Cybersécurité & Audits de Systèmes</a></li>
+                        <li><a href="#services">Maintenance Réseau & Support 24/7</a></li>
+                        <li><a href="#services">Développement Web & Systèmes Cloud</a></li>
+                        <li><a href="#projects">Missions Réalisées & Études de Cas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Direction & Siège</h4>
+                    <p class="footer-contact-line"><strong>CEO :</strong> Dieume MIRIMO</p>
+                    <p class="footer-contact-line">📍 Goma, République Démocratique du Congo</p>
+                    <p class="footer-contact-line">🌐 Interventions & Formations Mondiales en Ligne</p>
+                    <p class="footer-contact-line">📞 WhatsApp : +243 847 988 507</p>
+                    <p class="footer-contact-line">✉️ barakamirimo@gmail.com</p>
+                    <a href="#contact" class="btn btn-sm btn-primary mt-3">Prendre Contact avec le CEO</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 <strong>NZULO Tech</strong>. Tous droits réservés. <em>CONNECT • INNOVATE • EMPOWER</em>
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#hero">Retour en Haut &uarr;</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/243847988507?text=Bonjour%20NZULO%20Tech,%20je%20souhaite%20contacter%20votre%20direction."
+        class="floating-whatsapp" target="_blank" rel="noopener"
+        aria-label="Discuter directement sur WhatsApp avec NZULO Tech" title="Discuter avec NZULO Tech">
+        <img src="whatsapp.png" alt="WhatsApp Icon" loading="lazy" decoding="async" width="30" height="30" />
+        <span class="whatsapp-tooltip">NZULO Tech en ligne • Échangez avec le CEO</span>
+    </a>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Retourner en haut de la page" title="Haut de page">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- MODAL PHOTO ZOOM -->
+    <div id="photo-modal" class="modal" role="dialog" aria-modal="true" aria-label="Photo de profil en grand">
+        <div class="modal-content">
+            <button class="close close-photo" aria-label="Fermer la photo">&times;</button>
+            <img src="Dieume.jpg" alt="Dieume MIRIMO - CEO & Fondateur de NZULO Tech" id="modal-photo" loading="lazy"
+                decoding="async" width="500" height="530" />
+            <p class="modal-caption">Dieume MIRIMO &mdash; CEO & Fondateur &bull; NZULO Tech</p>
+        </div>
+    </div>
+
+    <!-- MODAL PROJETS DÉTAILS -->
+    <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-label="Détails du projet">
+        <div class="modal-content modal-project-content">
+            <button class="close close-project" aria-label="Fermer les détails">&times;</button>
+            <div id="project-modal-body">
+                <!-- Rempli dynamiquement par JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SUCCESS TOAST NOTIFICATION -->
+    <div id="toast-notification" class="toast" role="alert" aria-live="polite">
+        <div class="toast-icon">✓</div>
+        <div class="toast-message" id="toast-message">Demande transmise avec succès à NZULO Tech !</div>
+    </div>
+
+    <div id="google_translate_element" style="display:none"></div>
+    <script defer src="script.js"></script>
+    <script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
