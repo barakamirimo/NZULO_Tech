@@ -43,6 +43,7 @@
     --lang-fr-bg: #f0f9ff;
     --lang-es: #ea580c;
     --lang-es-bg: #fff7ed;
+    --lang-sw: #15803d;
 
     /* Ombres & Élévation */
     --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
@@ -1876,6 +1877,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card-es:hover {
     border-color: var(--lang-es);
+}
+
+.card-sw {
+    border-top: 5px solid var(--lang-sw);
+}
+.card-sw:hover {
+    border-color: var(--lang-sw);
 }
 
 .featured-card {
